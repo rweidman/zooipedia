@@ -23,7 +23,7 @@ type LayoutProps = {
 const Layout = ({ children, location }: LayoutProps) => (
 	<ThemeProvider theme={theme}>
 		<GlobalStyle />
-		<Seo title='Gatsby Contentful Blog w/ TypeScript' />
+		<Seo title='Zoo-I-Pedia' />
 		<Navigation />
 		<main className='test'>{children}</main>
 		<Footer />

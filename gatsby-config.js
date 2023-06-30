@@ -7,8 +7,8 @@ module.exports = {
     DEV_SSR: true,
   },
   siteMetadata: {
-    title: "Gatsby Contentful Starter",
-    description: "Official Contentful Gatsby Starter",
+    title: "Zoo-I-Pedia",
+    description: "Information on animals, from small to large.",
   },
   plugins: [
     "gatsby-transformer-sharp",
