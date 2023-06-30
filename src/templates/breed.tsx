@@ -32,6 +32,8 @@ const BreedTemplate = ({ data, location }: PageProps<GraphQLResult>) => {
 	const { previous } = data;
 	const { next } = data;
 
+	console.log(breed)
+
 	return (
 		<Layout location={location}>
 			<Seo title={breed.breedName} />
@@ -65,7 +67,7 @@ const BreedTemplate = ({ data, location }: PageProps<GraphQLResult>) => {
 					<div>
 					<S.Body>
 					<S.H1>{breed.breedName}</S.H1>
-						{renderRichText(breed.content, richTextOptions)}</S.Body>
+						{breed.body.body}</S.Body>
 					
 					<UL>
 						<LI><strong>Origin: </strong>{breed.origin}</LI>
@@ -122,8 +124,8 @@ export const pageQuery = graphql`
 			rating
 			ratingName2
 			rating2
-			content {
-				raw
+			body {
+				body
 			}
 
 		}

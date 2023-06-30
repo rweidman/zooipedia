@@ -3,6 +3,9 @@ require("dotenv").config({
 });
 
 module.exports = {
+  flags: {
+    DEV_SSR: true,
+  },
   siteMetadata: {
     title: "Gatsby Contentful Starter",
     description: "Official Contentful Gatsby Starter",
@@ -11,6 +14,8 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-emotion",
     "gatsby-plugin-image",
     {
       resolve: "gatsby-source-contentful",

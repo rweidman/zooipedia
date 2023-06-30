@@ -32,8 +32,8 @@ export type SingleBreed = {
 	rating: number;
 	ratingName2: string;
 	rating2: number
-	content: {
-		raw: string;
+	body: {
+		body: string;
 	};
 };
 

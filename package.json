@@ -17,6 +17,7 @@
     "babel-plugin-styled-components": "^2.1.4",
     "concurrently": "^8.2.0",
     "gatsby": "^5.5.0",
+    "gatsby-plugin-emotion": "^8.11.0",
     "gatsby-plugin-image": "^3.5.0",
     "gatsby-plugin-react-helmet": "^6.5.0",
     "gatsby-plugin-sharp": "^5.5.0",
@@ -63,6 +64,7 @@
     "dev-gatsby": "gatsby develop",
     "dev-typescript": "tsc -w",
     "dev": "npm run clean && concurrently \"npm:dev-gatsby\" \"npm:dev-typescript\"",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "build": "gatsby clean && gatsby build"
   }
 }
