@@ -6,6 +6,9 @@ margin-bottom:12px;
 margin-top:0;
 padding-top:0;
 	font-family:Verdana;
+	@media only screen and (max-width: 800px) {
+		margin-top:25px;
+	}
 `
 
 export const Meta = styled.span`
@@ -21,12 +24,19 @@ export const Meta = styled.span`
 `;
 
 export const BreedDetails = styled.div`
-	display:flex;
+	display:grid;
+	grid-template-columns: 1fr 1fr;
 
 	.gatsby-image-wrapper {
 		min-height:100%;
 		min-width: 50%;
 	}
+
+	@media only screen and (max-width: 800px) {
+		grid-template-columns: 1fr;
+	}
+
+
 	
 `
 
@@ -48,6 +58,8 @@ export const Breed = styled.article`
 			color: #4a90e2;
 		}
 	}
+
+	
 
 
 
@@ -79,6 +91,9 @@ export const Breed = styled.article`
 
 export const Body = styled.div`
 	padding-left:25px;
+	@media only screen and (max-width: 800px) {
+		padding-left:0;
+	}
 `;
 
 export const Navigation = styled.nav`

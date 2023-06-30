@@ -11,15 +11,7 @@ const Navigation = () => (
 			<StaticImage src="../../../static/images/logo.jpg" alt="Logo" />
 		</S.LogoLink>
 
-		<S.MenuList>
-			<S.MenuItem>
-				<Link to='/' activeClassName='active'>
-					Home
-				</Link>
-			</S.MenuItem>
-
-			
-		</S.MenuList>
+		
 	</S.Nav>
 );
 
